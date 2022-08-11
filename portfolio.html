@@ -12,14 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- ========================header======================== -->
+    <!-- ======================== HEADER ======================== -->
 
     <header class="header-border">
       <div class="container container-header">
@@ -69,7 +66,7 @@
       </div>
     </header>
 
-    <!-- main -->
+    <!-- ======================== MAIN ======================== -->
 
     <main>
       <section class="section">
@@ -308,7 +305,7 @@
       </section>
     </main>
 
-    <!-- footer -->
+    <!-- ======================== FOOTER ======================== -->
 
     <footer class="footer">
       <div class="container container-footer">
@@ -375,6 +372,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <p class="footer-form-field-text">Подпишитесь на рассылку</p>
+          <form action="" class="footer-form">
+            <label class="footer-form-field">
+              <input
+                type="text"
+                placeholder="E-mail"
+                name="e-mail"
+                class="footer-form-input"
+              />
+            </label>
+            <button type="submit" class="footer-form-btn">
+              <span class="footer-form-btn-text"
+                >Подписаться
+                <svg class="footer-form-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

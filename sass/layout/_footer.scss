@@ -1,0 +1,55 @@
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-main-contacts {
+  margin-right: 70px;
+}
+
+.log-footer {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.list .list-footer-info:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.logotype-secondary.footer {
+  color: var(--text-color-button);
+}
+
+.contacts-footer.address {
+  color: var(--text-color-button);
+}
+
+.contacts-footer.accent {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-footer.accent:hover,
+.contacts-footer.accent:focus {
+  color: var(--text-color-blue);
+}
+
+.contacts-footer {
+  text-decoration: none;
+}
+
+.footer-address {
+  font-family: inherit;
+  font-style: normal;
+}

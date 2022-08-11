@@ -1,0 +1,9 @@
+.list-header {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.list-header .list-pages:not(:last-child) {
+  margin-right: 50px;
+}

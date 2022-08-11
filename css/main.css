@@ -1,9 +1,262 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
 :root {
   --title-text-color: #212121;
   --primary-text-color: #757575;
   --text-color-blue: #2196f3;
   --text-color-button: #ffffff;
   --button-color: #f5f4fa;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 h1,
@@ -41,23 +294,9 @@ body {
   color: var(--title-text-color);
 }
 
-/* overlay */
-.overlay {
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: contain;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/Img:overlay.jpg);
+.section {
+  padding: 94px 0;
 }
-
-/* логтип */
 
 .container {
   width: 1200px;
@@ -74,33 +313,14 @@ body {
   margin-bottom: 94px;
 }
 
-.list.porfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.image-porfolio {
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.image-porfolio-link {
-  text-decoration: none;
-}
-
-.img-info-porfolio {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.image-porfolio-link:hover .img-info-porfolio,
-.image-porfolio-link:focus .img-info-porfolio {
-  display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.header-border {
-  border-bottom: 1px solid #ececec;
+.overlay {
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img:overlay.jpg);
 }
 
 .logotype {
@@ -131,8 +351,6 @@ body {
   margin-right: 50px;
 }
 
-/* ссылки шапки */
-
 .link-header {
   color: var(--title-text-color);
   font-weight: 500;
@@ -142,13 +360,16 @@ body {
   text-decoration: none;
   padding-top: 30px;
   padding-bottom: 30px;
-
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-header:hover,
 .link-header:focus {
+  color: var(--text-color-blue);
+}
+
+.link-header.active {
   color: var(--text-color-blue);
 }
 
@@ -164,11 +385,9 @@ body {
   bottom: -3px;
 }
 
-.link-header.active {
-  color: var(--text-color-blue);
+.header-border {
+  border-bottom: 1px solid #ececec;
 }
-
-/* контакты шапки */
 
 .header-items {
   display: flex;
@@ -212,25 +431,6 @@ body {
 .contacts-header:hover,
 .contacts-header:focus {
   fill: currentColor;
-}
-
-/* main */
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.section {
-  padding: 94px 0;
 }
 
 .section-desissions {
@@ -333,40 +533,11 @@ body {
 }
 
 .works {
-  /* text-align: center; */
   padding-top: 0;
 }
 
 .work-items {
   display: block;
-}
-
-.list-items-overlay {
-  position: relative;
-}
-
-.list-items-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: var(--text-color-button);
-  background-color: rgba(47, 48, 58, 0.8);
-
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-}
-
-.list-items:not(:last-child) {
-  margin-right: 30px;
 }
 
 .works-img {
@@ -382,8 +553,6 @@ body {
   margin-bottom: 50px;
 }
 
-/* наша команда */
-
 .team-cards {
   display: flex;
   justify-content: center;
@@ -396,45 +565,6 @@ body {
 .team-info {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-/* кнопки */
-
-.buttons-potfolio {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.nav-button {
-  background-color: var(--button-color);
-  color: var(--title-text-color);
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: 0;
-  display: block;
-  padding: 0;
-  padding: 6px 22px;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-button:hover,
-.nav-button:focus {
-  background-color: var(--text-color-blue);
-  color: var(--text-color-button);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.buttons-potfolio .list-nav-buttons:not(:last-child) {
-  margin-right: 8px;
 }
 
 .section-team .container {
@@ -456,8 +586,7 @@ body {
 
 .team-photo {
   background: var(--text-color-button);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   border: none;
 }
@@ -514,70 +643,6 @@ body {
   fill: var(--text-color-button);
 }
 
-/* картинки */
-
-.image {
-  box-sizing: border-box;
-  background: var(--text-color-button);
-}
-
-.image-overlay-text {
-  background: rgba(33, 150, 243, 0.9);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  color: var(--text-color-button);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 63px;
-  padding-bottom: 63px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  transform: translate(0, 100%);
-  transition: transform 250ms linear;
-}
-
-.image-overlay {
-  position: relative;
-  overflow: hidden;
-}
-
-.image-porfolio-link:hover .image-overlay-text,
-.image-porfolio-link:focus .image-overlay-text {
-  transform: translate(0, 0);
-}
-
-.img-info-porfolio {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
-
-.image .image-header {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-
-.image .image-text {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-}
-
-/* клиенты */
-
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -606,8 +671,7 @@ body {
 
 .clients-logo-link {
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-logo-link:hover,
@@ -615,8 +679,6 @@ body {
   fill: var(--text-color-blue);
   border: solid 1px var(--text-color-blue);
 }
-
-/* footer */
 
 .container-footer {
   display: flex;
@@ -792,9 +854,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -838,7 +898,6 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -992,3 +1051,146 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
+
+.list.porfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.image {
+  box-sizing: border-box;
+  background: var(--text-color-button);
+}
+
+.image-porfolio {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.image-porfolio-link {
+  text-decoration: none;
+}
+
+.img-info-porfolio {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-porfolio-link:hover .img-info-porfolio,
+.image-porfolio-link:focus .img-info-porfolio {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.list-items-overlay {
+  position: relative;
+}
+
+.list-items-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-button);
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.list-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.buttons-potfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-button {
+  background-color: var(--button-color);
+  color: var(--title-text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 0;
+  display: block;
+  padding: 0;
+  padding: 6px 22px;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: var(--text-color-blue);
+  color: var(--text-color-button);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.buttons-potfolio .list-nav-buttons:not(:last-child) {
+  margin-right: 8px;
+}
+
+.image-overlay-text {
+  background: rgba(33, 150, 243, 0.9);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--text-color-button);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  transform: translate(0, 100%);
+  transition: transform 250ms linear;
+}
+
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-porfolio-link:hover .image-overlay-text,
+.image-porfolio-link:focus .image-overlay-text {
+  transform: translate(0, 0);
+}
+
+.img-info-porfolio {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.image .image-header {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.image .image-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}/*# sourceMappingURL=main.css.map */

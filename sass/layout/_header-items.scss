@@ -1,0 +1,9 @@
+.header-items {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-items .list-pages:not(:last-child) {
+  margin-right: 50px;
+}
