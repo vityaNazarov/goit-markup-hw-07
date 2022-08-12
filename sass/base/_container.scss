@@ -3,12 +3,12 @@
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+
+  &.img-container {
+    margin-bottom: 94px;
+  }
 }
 
 .container-header {
   display: flex;
-}
-
-.container.img-container {
-  margin-bottom: 94px;
 }

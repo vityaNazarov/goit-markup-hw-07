@@ -1,34 +1,3 @@
-.differences-list {
-  display: flex;
-}
-
-.differences-item {
-  min-height: 101px;
-  width: 1200px;
-  margin: 94px auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.differences-block {
-  min-width: 270px;
-}
-
-.differences-block:not(:last-child) {
-  margin-right: 30px;
-}
-
-.differences-icon-block {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 .differences {
   font-weight: 700;
   font-size: 14px;
@@ -44,4 +13,35 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.differences-list {
+  display: flex;
+}
+
+.differences-item {
+  min-height: 101px;
+  width: 1200px;
+  margin: 94px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.differences-block {
+  min-width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.differences-icon-block {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }

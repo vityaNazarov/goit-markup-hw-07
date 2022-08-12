@@ -21,10 +21,10 @@
   line-height: 1.9;
   color: var(--text-color-button);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.title-button:hover,
-.title-button:focus {
-  background-color: #188ce8;
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
 }

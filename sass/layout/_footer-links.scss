@@ -19,6 +19,10 @@
   gap: 10px;
 }
 
+.footer-links-icon {
+  fill: var(--text-color-button);
+}
+
 .footer-links-link {
   display: flex;
   justify-content: center;
@@ -28,13 +32,9 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-links-link:hover,
-.footer-links-link:focus {
-  background-color: var(--text-color-blue);
-}
-
-.footer-links-icon {
-  fill: var(--text-color-button);
+  &:hover,
+  &:focus {
+    background-color: var(--text-color-blue);
+  }
 }
