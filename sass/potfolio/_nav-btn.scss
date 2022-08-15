@@ -1,14 +1,14 @@
-.buttons-potfolio {
+.buttons-filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 
-  & .list-nav-buttons:not(:last-child) {
+  & .buttons-filter__list:not(:last-child) {
     margin-right: 8px;
   }
 }
 
-.nav-button {
+.buttons-filter__nav {
   background-color: var(--button-color);
   color: var(--title-text-color);
   cursor: pointer;
@@ -19,7 +19,6 @@
   letter-spacing: 0.03em;
   border: 0;
   display: block;
-  padding: 0;
   padding: 6px 22px;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),

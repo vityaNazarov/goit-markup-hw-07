@@ -21,10 +21,10 @@
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+}
 
-  &.footer {
-    color: var(--text-color-button);
-  }
+.footer__studio {
+  color: var(--text-color-button);
 }
 
 .contacts-footer {

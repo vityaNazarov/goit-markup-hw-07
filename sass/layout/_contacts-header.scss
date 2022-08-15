@@ -36,8 +36,8 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+}
 
-  & .list-pages:not(:last-child) {
-    margin-right: 50px;
-  }
+.header-items .list-pages:not(:last-child) {
+  margin-right: 50px;
 }
