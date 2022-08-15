@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.footer-form-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   background-color: #2f303a;
@@ -23,7 +23,7 @@
   }
 }
 
-.footer-form-field-text {
+.footer-form_title {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -34,7 +34,7 @@
   color: var(--text-color-button);
 }
 
-.footer-form-btn {
+.footer-form__btn {
   width: 200px;
   height: 50px;
   background: var(--text-color-blue);
@@ -52,7 +52,7 @@
   }
 }
 
-.footer-form-btn-text {
+.footer-form__btn_text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +63,6 @@
   color: var(--text-color-button);
 }
 
-.footer-form-icon {
+.footer-form__icon {
   margin-left: 10px;
 }
