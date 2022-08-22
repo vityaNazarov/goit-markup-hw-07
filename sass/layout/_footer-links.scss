@@ -1,6 +1,11 @@
 .footer-links {
-  margin-right: 92px;
+  display: block;
+  margin-bottom: 60px;
 }
+
+// .footer-links {
+//   margin-right: 92px;
+// }
 
 .footer-links__title {
   font-weight: 700;
@@ -15,9 +20,15 @@
 
 .footer-links__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10px;
 }
+
+// .footer-links__list {
+//   display: flex;
+//   justify-content: flex-start;
+//   gap: 10px;
+// }
 
 .footer-links__icon {
   fill: var(--text-color-button);
@@ -36,5 +47,13 @@
   &:hover,
   &:focus {
     background-color: var(--text-color-blue);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }

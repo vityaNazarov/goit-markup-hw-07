@@ -1,14 +1,14 @@
-.buttons-filter {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 
-  & .buttons-filter__list:not(:last-child) {
+  & .filter__item:not(:last-child) {
     margin-right: 8px;
   }
 }
 
-.buttons-filter__nav {
+.filter__button {
   background-color: var(--button-color);
   color: var(--title-text-color);
   cursor: pointer;

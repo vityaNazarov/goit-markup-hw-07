@@ -4,13 +4,21 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .footer-contacts {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
+
+// .footer__container {
+//   display: flex;
+//   align-items: baseline;
+// }
+
+// .footer-contacts {
+//   margin-right: 70px;
+// }
 
 .footer-contacts__log {
   display: inline-block;
