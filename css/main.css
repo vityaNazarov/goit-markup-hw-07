@@ -700,6 +700,9 @@ body {
   .works-img {
     display: flex;
   }
+  .list-items:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   .team-photo:not(:last-child) {

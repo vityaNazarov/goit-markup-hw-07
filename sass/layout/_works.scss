@@ -29,4 +29,8 @@
   .works-img {
     display: flex;
   }
+
+  .list-items:not(:last-child) {
+    margin-right: 30px;
+  }
 }
