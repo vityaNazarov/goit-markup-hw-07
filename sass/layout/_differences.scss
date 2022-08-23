@@ -96,6 +96,21 @@
   }
 }
 
+//
+//
+//
+//
+//
+//
+
+@media screen and (min-width: 1200px) {
+  .differences-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+
 // .differences {
 //   font-weight: 700;
 //   font-size: 14px;

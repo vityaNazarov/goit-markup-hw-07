@@ -13,6 +13,13 @@
   }
 }
 
+//
+//
+//
+//
+//
+//
+
 @media screen and (min-width: 768px) {
   .logotype {
     color: var(--text-color-blue);
@@ -39,10 +46,13 @@
 //
 //
 //
-//
-//
-//
-//
+
+@media screen and (min-width: 1200px) {
+  .logotype {
+    margin-right: 93px;
+  }
+}
+
 //
 // .logotype {
 //   color: var(--text-color-blue);

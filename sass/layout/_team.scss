@@ -103,6 +103,19 @@
   }
 }
 
+//
+//
+//
+//
+//
+//
+
+@media screen and (min-width: 1200px) {
+  .team-cards {
+    flex-wrap: nowrap;
+  }
+}
+
 // .team-cards {
 //   display: flex;
 //   justify-content: center;
