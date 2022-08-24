@@ -1004,10 +1004,6 @@ body {
     margin-bottom: 0;
   }
 }
-.footer-form {
-  margin-bottom: 20px;
-}
-
 .footer-form__input {
   width: calc(100% - 30px);
   height: 50px;
@@ -1017,6 +1013,7 @@ body {
   border-radius: 4px;
   padding-left: 16px;
   outline: none;
+  margin-bottom: 20px;
 }
 .footer-form__input::placeholder {
   font-weight: 400;
