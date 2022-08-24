@@ -369,6 +369,9 @@ body {
     padding-bottom: 16px;
     display: block;
   }
+  .logotype-secondary {
+    color: var(--title-text-color);
+  }
 }
 @media screen and (min-width: 768px) {
   .logotype {
@@ -473,11 +476,10 @@ body {
     bottom: -2px;
   }
 }
-@media screen and (min-width: 768px) {
-  .header-border {
-    border-bottom: 1px solid #ececec;
-  }
+.header-border {
+  border-bottom: 1px solid #ececec;
 }
+
 @media screen and (max-width: 767px) {
   .header-items {
     display: none;
@@ -1139,17 +1141,12 @@ body {
   pointer-events: none;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .modal {
-    width: 100%;
-  }
-}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 93%;
   background: var(--text-color-button);
   border-radius: 4px;
   padding: 40px;
@@ -1320,6 +1317,11 @@ body {
   line-height: 1.87;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;

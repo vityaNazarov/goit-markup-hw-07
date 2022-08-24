@@ -11,15 +11,6 @@
   margin-bottom: 60px;
 }
 
-// .footer__container {
-//   display: flex;
-//   align-items: baseline;
-// }
-
-// .footer-contacts {
-//   margin-right: 70px;
-// }
-
 .footer-contacts__log {
   display: inline-block;
   padding: 0;
@@ -69,20 +60,18 @@
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 @media screen and (min-width: 1200px) {
   .footer {
     background-color: #2f303a;
     padding: 60px 0;
   }
-
-  // .footer__container {
-  //   text-align: center;
-  // }
-
-  // .footer-contacts {
-  //   margin-bottom: 60px;
-  // }
 
   .footer__container {
     display: flex;

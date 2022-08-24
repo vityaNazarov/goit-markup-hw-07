@@ -4,6 +4,19 @@
   align-items: center;
 }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 @media screen and (max-width: 767px) {
   .list-header {
     display: none;
@@ -29,6 +42,16 @@
 
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 @media screen and (min-width: 768px) {
   .list-header {
@@ -50,26 +73,25 @@
   }
 }
 
-// .list-pages:not(:last-child) {
-//   margin-bottom: 10px;
-// }
-
 .list-pages__contacts:not(:last-child) {
   margin-bottom: 10px;
 }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 @media screen and (min-width: 1200px) {
   .list-pages:not(:last-child) {
     margin-bottom: 0;
   }
 }
-
-// .list-header {
-//   display: inline-block;
-//   display: flex;
-//   align-items: center;
-
-//   & .list-pages:not(:last-child) {
-//     margin-right: 50px;
-//   }
-// }

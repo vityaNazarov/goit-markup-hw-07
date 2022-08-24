@@ -6,7 +6,10 @@
 
 //
 //
-
+//
+//
+//
+//
 //
 //
 //
@@ -64,6 +67,12 @@
   //
   //
   //
+  //
+  //
+  //
+  //
+  //
+  //
 
   @media screen and (min-width: 1200px) {
     .header-items {
@@ -92,58 +101,4 @@
       align-items: center;
     }
   }
-
-  //
-  //
-  //
-  //
-  //
-  //
-
-  // .header-items .list-pages:not(:last-child) {
-  //   margin-right: 50px;
-  // }
 }
-// .contacts-header {
-//   display: flex;
-//   align-items: center;
-//   color: var(--primary-text-color);
-//   text-decoration: none;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.1;
-//   letter-spacing: 0.02em;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     fill: currentColor;
-//   }
-
-//   &.accent:hover,
-//   &.accent:focus {
-//     color: var(--text-color-blue);
-//   }
-// }
-
-// .header-icons {
-//   margin-right: 10px;
-//   cursor: pointer;
-//   fill: var(--primary-text-color);
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   .contacts-header:hover &,
-//   .contacts-header:focus & {
-//     fill: currentColor;
-//   }
-// }
-
-// .header-items {
-//   display: flex;
-//   align-items: center;
-//   margin-left: auto;
-// }
-
-// .header-items .list-pages:not(:last-child) {
-//   margin-right: 50px;
-// }
